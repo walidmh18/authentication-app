@@ -1,0 +1,181 @@
+.col{
+   /* display: flex; */
+   /* border-top: 1px solid var(--borders); */
+   padding: 2rem;
+}
+
+.col.imageCol{
+   display: flex;
+}
+.col .key{
+   width: 30%;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem 10rem;
+}
+
+.profile{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   border: 1px solid var(--borders);
+   padding: 1rem;
+   border-radius: 1rem;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.profile:hover{
+   background: #eee;
+}
+
+.profile img{
+   width: 2rem;
+}
+
+section{
+   margin: auto;
+   width: 60%;
+}
+
+#title{
+   margin-bottom: 3rem;
+   color: var(--blue2);
+   font-size: 1.7rem;
+
+}
+
+#title h1{
+   font-size: 3rem;
+   font-weight: 400;
+}
+
+#profile{
+   border: 1px solid var(--borders);
+   /* padding: 0 0 2rem; */
+   margin-bottom: 3rem;
+}
+
+#profile .top{
+   display: flex;
+   justify-content: space-between;
+   padding:  2rem;
+
+}
+
+#profile .top h2{
+   font-size: 2rem;
+   font-weight: 400;
+}
+
+.editBtn{
+   padding: 1rem 1.5rem;
+   border-radius: 1rem;
+   border: 1px solid var(--borders);
+}
+
+.col img{
+   width: 100%;
+}
+
+label[for="image"]{
+   position: relative;
+   width: 30%;
+   border-radius: 100vmax;
+   overflow: hidden;
+}
+
+label input{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   z-index: 3;
+   cursor: pointer;
+}
+
+label .overlay{
+   position: absolute;
+   z-index: 2;
+   background: #18181818;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-items: center;
+   font-size: 3rem;
+
+}
+
+.col input ,.col textarea{
+   border: 1px solid var(--borders);
+   padding:  1rem;
+   font-size: 1rem;
+   border-radius: 10px;
+   width: 70%;
+   resize: vertical;
+}
+
+#saveChangesBtn{
+   margin: 2rem;
+   padding: 1rem;
+   background: var(--blue1);
+   border-radius: 1rem;
+   color: white;
+
+}
+
+#changeImgBtn{
+   padding: 1rem;
+   border-radius: 1rem;
+   border: 1px solid var(--borders);
+   align-self: flex-end;
+}
+
+
+@media (max-width:768px) {
+   section{
+      width: 80%;
+   }
+   header{
+      padding: 2rem 5rem;
+   }
+}
+
+@media (max-width:500px) {
+   .col .key{
+      width: 40%;
+   }
+   .col{
+      padding: 1rem;
+   }
+   
+   labal{
+      align-self: flex-start;
+   }
+
+   label .overlay i{
+      font-size: 2rem;
+   }
+   .col input, .col textarea{
+      width: 100%;
+   }
+}
+
+@media (max-width:450px) {
+   section{
+      width: 95%;
+   }
+   header{
+      padding: 2rem ;
+   }
+   p.name{
+      display: none;
+   }
+}

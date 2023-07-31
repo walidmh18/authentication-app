@@ -1,0 +1,114 @@
+.col{
+   display: flex;
+   border-top: 1px solid var(--borders);
+   padding: 2rem;
+}
+.col .key{
+   width: 30%;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem 10rem;
+}
+
+.profile{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   border: 1px solid var(--borders);
+   padding: 1rem;
+   border-radius: 1rem;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.profile:hover{
+   background: #eee;
+}
+
+.profile img{
+   width: 2rem;
+}
+
+section{
+   margin: auto;
+   width: 60%;
+}
+
+#title{
+   text-align: center;
+   margin-bottom: 3rem;
+
+}
+
+#title h1{
+   font-size: 3rem;
+   font-weight: 400;
+}
+
+#profile{
+   border: 1px solid var(--borders);
+   /* padding: 0 0 2rem; */
+   margin-bottom: 3rem;
+}
+
+#profile .top{
+   display: flex;
+   justify-content: space-between;
+   padding:  2rem;
+
+}
+
+#profile .top h2{
+   font-size: 2rem;
+   font-weight: 400;
+}
+
+.editBtn{
+   padding: 1rem 1.5rem;
+   border-radius: 1rem;
+   border: 1px solid var(--borders);
+   align-self: flex-start;
+}
+
+.col img{
+   width: 30%;
+}
+
+.changePasswordBtn {
+   padding: 0.2rem;
+   border: 1px solid var(--borders);
+   
+}
+
+@media (max-width:768px) {
+   section{
+      width: 80%;
+   }
+   header{
+      padding: 2rem 5rem;
+   }
+}
+
+@media (max-width:500px) {
+   .col .key{
+      width: 40%;
+   }
+   .col{
+      padding: 1rem;
+   }
+}
+
+@media (max-width:450px) {
+   section{
+      width: 95%;
+   }
+   header{
+      padding: 2rem ;
+   }
+   p.name{
+      display: none;
+   }
+}
